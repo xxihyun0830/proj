@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+html{
+    color: black;
+    background-color: rgb(32, 51, 85);
+    padding: 2rem 1rem ;
+    font-size: 1rem;
+}
+
+body{
+    margin: 0rem;
+    padding : 1rem ;    
+    background-color: rgb(3, 87, 156);
+}
+
+h1{
+    font-size: 5rem;
+    color: yellow;
+    text-shadow: 0 0 0.2rem rgb(7, 5, 102);
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+hr{
+    width: 35rem ; 
+    /*가로 길이*/
+}
+
+p {
+	line-height: 160%;
+    margin: 1rem 0;
+    color : red;
+}
+
+/* -------------------------------------- */
+/* layout */
+.content{
+    flex : 1;
+}
+
+#intro{
+    background: #e0e0e0;
+    display: flex;
+    text-align: center;
+    margin-bottom: 3rem ;
+    padding : 1rem;
+    flex-direction: column;
+
+    /* display = flex 하면 브라우저 크기에 맞춰서 
+    배경색이 지정된다.  */
+
+}
+
+.minion{
+    width : 80%;
+    
+}
+
+table.introduction{
+    border-collapse:separate;
+    text-align: left;
+    border-left: 0.3rem solid rgba(0, 0, 0, 0.644);
+    margin: 1.5rem 2rem ;
+    padding: 1rem;
+    
+}
+/* device에 따른 테이블 크기 변환은 
+  media query 로 다루면 된다! 밑에서 따로 쓰면 됩니다!  
+*/
+
+
+#introduction.th{
+    color : black;
+    font-weight: bold;
+}
+thead{
+    color:blue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------------ */
+
+#movie{
+    background-color:rgb(253, 191, 184);
+    text-align: center;
+    margin-bottom: 3rem ;
+    padding : 1rem;
+    
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.parasite_poster{
+    width: 80%;
+    padding : 1rem;
+    
+}
+
+.exit_poster{
+    width: 80%;
+    padding : 1rem;
+    
+}
+
+/* ------------------------------------------ */
+#music{
+    background-color: rgb(233, 244, 245);
+    text-align: center;
+    margin-bottom: 3rem ;
+    padding : 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+@media only screen and (max-device-width : 768px) { 
+    /* 768 x 1024 = iPad */
+    div.img{
+        width : 10%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    table{
+        display: flex;
+        flex-direction: column;
+
+    }
+    div.title{
+        color : rgb(81, 0, 119);
+        display: flex;
+        flex-direction: column;
+        padding : 1.3rem;
+        
+    }
+
+    div.content{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding : 1rem;
+
+    }
+
+    div.introBox{
+        background-color: red;
+
+    }
+    div.movieBox{
+        background-color: orange;
+
+    }
+    div.musicBox{
+        background-color: yellow;
+    }
+
+
+
+}
+
+@media only screen and (max-device-width : 414px) {
+    div.img{
+        width : 10%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    table{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    div.title{
+        color : rgb(239, 248, 186);
+        display: flex;
+        flex-direction: column;
+        padding : 1.3rem;
+        
+    }
+    
+
+
+    div.content{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding : 1rem;
+
+    }
+
+    div.introBox{
+        background-color: rgb(0, 177, 59);
+
+    }
+    div.movieBox{
+        background-color: rgb(0, 60, 255);
+
+    }
+    div.musicBox{
+        background-color: rgb(153, 0, 255);
+    }
+
+    
+}
+

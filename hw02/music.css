@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body{
+    background-color:whitesmoke;
+    padding: 2rem;
+}
+h1{
+    color: #47f324;
+    text-shadow: 0 0 0.1rem black;
+    text-align: center;
+}
+
+div.music_research{
+    display: flex;
+    flex-direction: column;
+}
+
+div.content{
+    text-align: center;
+    font-size: 2rem;
+    border: 0.3rem solid black;
+    background-color: white;
+    display: flex;
+}
+
+
+@media only screen and (max-device-width : 768px) { 
+
+div.music_research{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: rgb(125, 202, 253);
+    text-shadow: 0 0 0.1rem black;
+    text-align: center;
+}
+
+input.submit_button:hover{
+    background-color: blue;
+    color : white;
+    
+}
+
+
+}
+
+@media only screen and (max-device-width : 414px) {
+    div.music_research{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h1{
+        color: rgb(245, 143, 206);
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    input.submit_button:hover{
+        background-color: rgb(255, 60, 0);
+        color : white;
+        
+    }
+    
+}
+
+
+
+
